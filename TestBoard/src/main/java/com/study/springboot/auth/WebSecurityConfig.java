@@ -34,7 +34,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 				.loginProcessingUrl("/j_spring_security_check")
 				//.failureUrl("/loginForm?error")       // default : /login?error
 				.failureHandler(authenticationFailureHandler)
-				//.defaultSuccessUrl("/")
+				.defaultSuccessUrl("/member/welcome")
 				.usernameParameter("j_username") // default : j_username
 				.passwordParameter("j_password") // default : j_password
 				.permitAll();
@@ -61,7 +61,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 	
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception{
-		System.out.println(passwordEncoder().encode("321"));
 		
 		auth.jdbcAuthentication()
 			.dataSource(dataSource)

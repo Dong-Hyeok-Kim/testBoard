@@ -15,11 +15,14 @@
 			<td> 이름 </td>
 			<td> <input type="text" name="name" size = "100"> </td>
 			
+			<td> <input type="checkbox" name="authority" value="ROLE_ADMIN">권한 </td>
+			
 		</tr>
 		<tr>
 			<td> 비밀번호 </td>
-			<td> <input type="text" name="password" size = "100" ></td>
+			<td colspan = "2"> <input type="text" name="password" size = "100" ></td>
 		</tr>
+		
 		<tr>
 			<td colspan="2"><input type="submit" value="입력">
 		</tr>

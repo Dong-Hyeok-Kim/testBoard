@@ -4,10 +4,10 @@
 	PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
 	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
  	
-<mapper namespace="com.study.springboot.customer.dao.CustManagementDao">
+<mapper namespace="com.study.springboot.customer.dao.ICustManagementDao">
 
-	<insert id="CustRegiDao" >
+	<insert id="custRegiDao" >
 		insert into user_list( name, password, authority, enabled)
-			values ( #{param1}, #{param2}, "ROLE_USER", 1)
+			values ( #{param1}, #{param2}, #{param3}, 1)
 	</insert>
 </mapper>

@@ -22,6 +22,7 @@
 	PW : <input type="text" name="j_password"><br />
 	<input type="submit" value="LOGIN"><br />
 </form>
+<p><a href="signup/signup">회원가입</a></p>
 
 </body>
 </html>
